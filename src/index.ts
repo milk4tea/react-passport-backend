@@ -29,7 +29,7 @@ mongoose.connect(
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://musing-hermann-7e53d2.netlify.app/",
+    origin: "https://musing-hermann-7e53d2.netlify.app",
     credentials: true,
   })
 );
