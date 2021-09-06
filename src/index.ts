@@ -29,7 +29,7 @@ mongoose.connect(
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://musing-hermann-7e53d2.netlify.app/",
     credentials: true,
   })
 );
@@ -156,7 +156,7 @@ app.get(
   passport.authenticate("google", { failureRedirect: "/login" }),
   function (req, res) {
     // Successful authentication, redirect home.
-    res.redirect("http://localhost:3000");
+    res.redirect("https://musing-hermann-7e53d2.netlify.app/");
   }
 );
 
@@ -166,7 +166,7 @@ app.get(
   passport.authenticate("twitter", { failureRedirect: "/login" }),
   function (req, res) {
     // Successful authentication, redirect home.
-    res.redirect("http://localhost:3000");
+    res.redirect("https://musing-hermann-7e53d2.netlify.app/");
   }
 );
 
@@ -176,7 +176,7 @@ app.get(
   passport.authenticate("github", { failureRedirect: "/login" }),
   function (req, res) {
     // Successful authentication, redirect home.
-    res.redirect("http://localhost:3000");
+    res.redirect("https://musing-hermann-7e53d2.netlify.app/");
   }
 );
 
